@@ -16,7 +16,11 @@
     <RaddarChart :metrics="teamStore.metrics" />
 
     <v-row justify="center">
-      <div v-for="(v, i) in metrics" :key="i" class="text-center ma-4">
+      <div
+        v-for="(v, i) in teamStore.metrics"
+        :key="i"
+        class="text-center ma-4"
+      >
         <v-progress-circular
           class="text-center title"
           rotate="360"
