@@ -1,13 +1,13 @@
 <template>
   <v-app>
     <div class="text-center mt-3">
-      <!-- <h1
+      <h1
         @click="$router.push(`/`)"
         class="text-h1 font-weight-bold animate__animated animate__zoomIn forte mb-2 mt-10 d-xs-none"
       >
         <span class="teal forte">YQY</span><span class="forte">MONs</span>
       </h1>
-      <p class="gradiantText">KPL Legend Team</p> -->
+      <p class="gradiantText">KPL Legend Team</p>
 
       <v-item-group v-model="model" class="my-6">
         <v-item v-for="(v, i) in btns" :key="i">
@@ -33,12 +33,7 @@
 <script setup lang="ts">
 import { useRouter } from "vue-router";
 
-const btns = [
-  { text: "squad" },
-  { text: "show" },
-  { text: "shop" },
-  { text: "decoration" },
-];
+const btns = [{ text: "squad" }, { text: "show" }, { text: "shop" }];
 const model = null;
 
 const router = useRouter();
